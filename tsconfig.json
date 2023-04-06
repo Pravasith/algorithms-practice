@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "allowJs": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "resolveJsonModule": true,
+        "noImplicitReturns": true,
+        "esModuleInterop": true,
+        "target": "es6",
+        "module": "commonjs",
+        "baseUrl": "src",
+        "paths": {
+            "@basic/*": [ "basic_algos/*" ],
+            "@ds/*": [ "data_structures/*" ]
+        }
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
