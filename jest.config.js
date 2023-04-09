@@ -4,10 +4,13 @@ module.exports = {
     preset: 'ts-jest',
     testEnvironment: 'node',
     moduleNameMapper: {
-        "@basic/(.*)": [
-            "<rootDir>/src/basic_algos/$1"
+        "@algorithms/(.*)": [
+            "<rootDir>/src/algorithms/$1"
         ],
-        "@ds/(.*)": [
+        "@problems/(.*)": [
+            "<rootDir>/src/problems/$1"
+        ],
+        "@data-structures/(.*)": [
             "<rootDir>/src/data_structures/$1"
         ]
     }

@@ -1,5 +1,4 @@
-import SinglyLinked from "@ds/linked_list/singly_linked"
-import { Node } from "@ds/linked_list/interface"
+import SinglyLinked from "@data-structures/linked_list/singly_linked"
 
 describe("Singly Linked Test 1", () => {
     it("Creates List", () => {
@@ -7,7 +6,7 @@ describe("Singly Linked Test 1", () => {
         const singlyLinked = new SinglyLinked()
 
         singlyLinked.fillWithListValues(mockArr1)
-        console.log(singlyLinked.getList())
+        expect(singlyLinked.getList()).toEqual(mockArr1)
 
     })
 })

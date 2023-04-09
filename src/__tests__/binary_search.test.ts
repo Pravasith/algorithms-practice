@@ -1,8 +1,8 @@
-import bs from "@basic/binary_search"
+import binary_search from "@algorithms/binary_search"
 
 describe("testing add function", () => {
     it("returns 3", () => {
         const mockArr1 = [1, 2, 5, 10, 55, 100]
-        expect(bs(mockArr1, 10)).toBe(3)
+        expect(binary_search(mockArr1, 10)).toBe(3)
     })
 })

@@ -11,8 +11,9 @@
         "module": "commonjs",
         "baseUrl": "src",
         "paths": {
-            "@basic/*": [ "basic_algos/*" ],
-            "@ds/*": [ "data_structures/*" ]
+            "@algorithms/*": [ "algorithms/*" ],
+            "@data-structures/*": [ "data_structures/*" ],
+            "@problems/*": [ "problems/*" ]
         }
     },
     "include": [
