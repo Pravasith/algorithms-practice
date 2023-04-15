@@ -7,7 +7,6 @@ const dir = [
     [-1, 0]
 ]
 
-
 const walk = (
     maze: string[],
     wall: string,
@@ -51,7 +50,6 @@ const walk = (
 
     // Post
     path.pop()
-
 
     return false
 }
