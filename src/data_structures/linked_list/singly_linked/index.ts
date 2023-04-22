@@ -1,4 +1,4 @@
-import { Node } from "../interface"
+import { Node } from "./interface"
 
 class SinglyLinked<T> {
     head: Node<T> | null
@@ -22,8 +22,7 @@ class SinglyLinked<T> {
             }
 
             else {
-
-                if (!!curr) {
+                if (curr) {
                     curr.next = tempNode
                     curr = curr.next
                 }
