@@ -1,23 +1,21 @@
-
 const crystal_ballz = (floors: boolean[]) => {
+  const sqrt = Math.floor(Math.sqrt(floors.length - 1))
 
-    const sqrt = Math.floor(Math.sqrt(floors.length - 1))
+  let i = 0
 
-    let i = 0
+  for (; i < floors.length - 1; i += sqrt) {
+    if (floors[i]) break
+  }
 
-    for (; i < floors.length - 1; i += sqrt) {
-        if (floors[i])
-            break
-    }
+  const end = i
 
-    const end = i
+  let j = i - sqrt
 
-    let j = i - sqrt
-    for (; j < end && j < floors.length; j++) {
-        if (floors[j]) break
-    }
+  for (; j < end && j < floors.length; j++) {
+    if (floors[j]) break
+  }
 
-    return j
+  return j
 }
 
 export default crystal_ballz
